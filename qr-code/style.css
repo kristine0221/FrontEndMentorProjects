@@ -28,6 +28,7 @@ body{
     justify-content: center;
     height: 490px;
     width: 305px;
+    margin: 15px;
 }
 
 .wrapper{
@@ -42,7 +43,7 @@ img{
     margin-bottom: 20px;
 }
 
-p:nth-child(2){
+h1{
     font-weight: 700;
     margin-bottom: 15px;
     color: hsl(218, 44%, 22%);
