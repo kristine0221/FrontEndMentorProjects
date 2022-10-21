@@ -10,8 +10,6 @@ body{
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    /* color: hsl(219, 14%, 63%); */
-    /* text-align: center; */
     background: hsl(228, 71%, 99%);
 
     display: flex;
@@ -22,10 +20,6 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
     border: solid orange;
-}
-
-.notifWrapper div:nth-child(1){
-    font-weight: 800;
 }
 
 .name, .post{
@@ -80,9 +74,29 @@ body{
     border: red solid;
 }
 
+/* nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px;
+} */
+
 .header-nav{
     border: solid green;
 }
+
+.notifWrapper div:nth-child(1){
+    font-weight: 800;
+}
+
+.notifWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    align-items: center;
+    border: solid green;
+}
+
 .messagesContainer{
     border: solid blue;
     position: absolute;
@@ -90,77 +104,52 @@ body{
     height: 80%;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 40px;
-}
-
-.notifWrapper{
-    display: flex;
-}
-
 #msgsCount{
-    margin-left: 35px;
+    margin-left: 30px;
 }
 
 
 .msgsWrapper{
-    display: block;
+    /* display: block; */
     margin: 10px 40px;
-    /* padding: 5px; */
-    align-items: center;
+    /* align-items: center; */
     border-radius: 10px;
     border: solid violet;
-    /* position: absolute; */
-    height: 10%;
+    /* height: 12%; */
 }
 
 .imgAndMsgs{
     display:flex;
     align-items: center;
 }
-/* div.msgsWrap{
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-}
-
-.msgsWrap > span{
-    /* display: block; */
-/*} */
-
-/* div.text{
-    display: inline-block;
-} */
 
 .time{
-    margin-left: 82px;
+    margin-left: 85px;
     /* bottom: 810px; */
     position: absolute;
     border: solid brown;
+    margin-top: 40px;
 }
-/* small:nth-child(2){
-    bottom: 810px;
-} */
+
+.time:nth-child(4){
+    margin-top: 40px;
+}
+
 .action, .time{
     color: hsl(219, 14%, 63%);
 }
 
 .name, .action, .post{
- /* padding-right: 5px; */
- /* display: contents; */
- /* display: inline-block; */
  width: 100%;
 }
 
-/* .msgs div > p:nth-child(2){
-    color: hsl(219, 14%, 63%);
-} */
-
 .msgsWrapper:nth-child(1){
     margin-top: 0;
+    background-color: hsl(211, 68%, 94%);
+}
+
+.msgsWrapper:nth-child(4) {
+    height: 19%;
 }
 
 img{
@@ -171,4 +160,17 @@ img{
 
 p > small{
     display: block;
+}
+
+small:nth-of-type(4){
+margin-top: 20px;
+}
+
+.privateMsg{
+    border: solid 1px hsl(207, 18%, 90%);
+    border-radius: 5px;
+    margin-top: 19px;
+    padding: 11px;
+    color: hsl(219, 14%, 63%);
+    width: 70%;
 }
