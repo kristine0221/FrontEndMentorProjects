@@ -110,25 +110,25 @@ body{
 
 
 .msgsWrapper{
-    /* display: block; */
+    / display: block; /
     margin: 10px 40px;
-    /* align-items: center; */
+    / align-items: center; /
     border-radius: 10px;
     border: solid violet;
-    /* height: 12%; */
+    / height: 12%; /
 }
 
 .imgAndMsgs{
     display:flex;
-    align-items: center;
+    / align-items: center; /
 }
 
 .time{
-    margin-left: 85px;
-    /* bottom: 810px; */
-    position: absolute;
+    / margin-left: 85px; /
+    / bottom: 810px; /
+    / position: absolute; /
     border: solid brown;
-    margin-top: 40px;
+    / margin-top: 40px; /
 }
 
 .time:nth-child(4){
@@ -148,9 +148,9 @@ body{
     background-color: hsl(211, 68%, 94%);
 }
 
-.msgsWrapper:nth-child(4) {
+/* .msgsWrapper:nth-child(4) {
     height: 19%;
-}
+} */
 
 img{
     max-width: 100%;

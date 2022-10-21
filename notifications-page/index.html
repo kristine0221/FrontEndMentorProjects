@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon-32x32.png">
     <title>Notifications page</title>
 </head>
@@ -24,25 +25,30 @@
                 <section class="msgsWrapper">
                     <div class="imgAndMsgs">
                         <img src="./assets/images/avatar-mark-webber.webp" alt="avatar-mark-webber"/>
-                        <div>
+                        <div style="flex-direction: column;">
+                            <p>
                             <span class="name">Mark Webber</span>
                             <span class="action">reacted to your recent post</span>
                             <span class="post">My first tournament today!</span>
+                            </p>
                             <i class="fa-solid fa-period"></i>
+                            <small class="time">1m ago</small>
                         </div>
-                        <small class="time">1m ago</small>
                     </div>
                 </section>
                     
                 <section class="msgsWrapper">
                     <div class="imgAndMsgs">
                         <img src="./assets/images/avatar-angela-gray.webp" alt="avatar-angela-gray"/>
-                        <div>
-                            <span class="name">Angela Gray</span>
-                            <span class="action">followed you</span>
+                        <div style="flex-direction: column;">
+                            <p>
+                                <span class="name">Angela Gray</span>
+                                <span class="action">followed you</span>
+                            </p>
                             <i class="fa-solid fa-period"></i>
+                            <small class="time">5m ago</small>
                         </div>
-                        <small class="time">5m ago</small>
+                        
                     </div>
                 </section>
                     
@@ -50,13 +56,16 @@
                 <section class="msgsWrapper">
                     <div class="imgAndMsgs">
                         <img src="./assets/images/avatar-jacob-thompson.webp" alt="avatar-jacob-thompson"/>
-                        <div>
-                            <span class="name">Jacob Thompson</span>
-                            <span class="action">has joined your group<span/span>
-                            <span class="post">Chess Club</span>
-                            <i class="fa-solid fa-period"></i>
+                        <div style="flex-direction: column;">
+                            <p>
+                                <span class="name">Jacob Thompson</span>
+                                <span class="action">has joined your group<span/span>
+                                <span class="post">Chess Club</span>
+                                <i class="fa-solid fa-period"></i>
+                            </p>
+                            <small class="time">1day ago</small>
                         </div>
-                        <small class="time">1day ago</small>
+                        
                     </div>
                 </section>
               
@@ -64,13 +73,16 @@
                 <section class="msgsWrapper">
                     <div class="imgAndMsgs">
                         <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="avatar-rizky-hasanuddin"/>
-                        <div>
-                            <span class="name">Risky Hasanuddin</span>
-                            <span class="action">sent you a private message</span>
-                            <i class="fa-solid fa-period"></i>
+                        <div style="flex-direction: column;">
+                            <div>
+                                <span class="name">Risky Hasanuddin</span>
+                                <span class="action">sent you a private message</span>
+                                <i class="fa-solid fa-period"></i>
+                            </div>
+                            <small class="time">5 days ago</small>
                             <p class="privateMsg">Hello, thanks for settingup the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
                         </div>
-                        <small class="time">5 days ago</small>
+                        
                     </div>
                 </section>
                 
@@ -78,45 +90,56 @@
                 <section class="msgsWrapper">
                     <div class="imgAndMsgs">
                         <img src="./assets/images/avatar-kimberly-smith.webp" alt="avatar-kimberly-smith"/>
-                        <div>
-                            <span class="name">Kimberly Smith</span>
-                            <span class="action">commented on your picture</span>
-                            <i class="fa-solid fa-period"></i>
-                            <!-- <img src="./assets/images/image-chess.webp" alt="image-chess"/> -->
+                        <div style="flex-direction: column;">
+                            <p>
+                                <span class="name">Kimberly Smith</span>
+                                <span class="action">commented on your picture</span>
+                                <i class="fa-solid fa-period"></i> 
+                            </p>
+                            <small class="time">1week ago</small>
                         </div>
-                        <small class="time">1week ago</small>
+                        <img src="./assets/images/image-chess.webp" alt="image-chess"/>
                     </div>
+
                 </section>
                 
 
                 <section class="msgsWrapper">
                     <div class="imgAndMsgs">
                         <img src="./assets/images/avatar-nathan-peterson.webp" alt="avatar-nathan-peterson"/>
-                        <div>
-                            <span class="name">Nathan Peterson</span>
-                            <span class="action">reacted to your recent post</span>
-                            <span class="post">5 end-gaspanme strategies to increase your win rate</span>
-                            <i class="fa-solid fa-period"></i>
+                        <div style="flex-direction: column;">
+                            <p>
+                                <span class="name">Nathan Peterson</span>
+                                <span class="action">reacted to your recent post</span>
+                                <span class="post">5 end-gaspanme strategies to increase your win rate</span>
+                                <i class="fa-solid fa-period"></i>
+                            </p>
+                            <small class="time">2 weeks ago</small>
                         </div>
-                        <small class="time">2 weeks ago</small>
+                        
                     </div>
                 </section>
                 
                 <section class="msgsWrapper">
                     <div class="imgAndMsgs">
                         <img src="./assets/images/avatar-anna-kim.webp" alt="avatar-anna-kim"/>
-                        <div>
-                            <span class="name">Anna Kim</span>
-                            <span class="action">left the group</span>
-                            <span class="post">Chess Club</span>
-                            <i class="fa-solid fa-period"></i>
+                        <div style="flex-direction: column;">
+                            <p>
+                                <span class="name">Anna Kim</span>
+                                <span class="action">left the group</span>
+                                <span class="post">Chess Club</span>
+                                <i class="fa-solid fa-period"></i>
+                            </p>
+                            <small class="time">2 weeks ago</small>
                         </div>
-                        <small class="time">2 weeks ago</small>
+                        
                     </div>
                 </section>
             </div>
         </div>
     </main>
     <!-- <script src="script.js"></script> -->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
 </body>
 </html>
