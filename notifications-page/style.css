@@ -95,8 +95,9 @@ h1, .name, .post{
     font-weight: 900;
     font-size: 9px;
     margin: 0px 7px;
-    color: hsl(0, 0%, 100%);
-}
+    color: hsl(1, 90%, 64%); /* color for active */
+    /* color: hsl(0, 0%, 100%); */ /*color if not active */
+} 
 
 .sec-img {
     margin: 10px 0px;
@@ -134,7 +135,7 @@ h1, .name, .post{
 
    .notifWrapper {
         font-size: 14px;
-        margin: 10px;
+        margin: 25px 3px;
     }
 
     #msgsCount {
@@ -142,7 +143,7 @@ h1, .name, .post{
     }
 
     .msgsWrapper {
-        margin: 5px 10px;
+        margin: 15px 5px;
     }
 
     img {
