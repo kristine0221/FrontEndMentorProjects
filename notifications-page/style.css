@@ -8,23 +8,29 @@
 
 body{
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 16px;
+    font-size: 19px;
     line-height: 1.5;
     background: hsl(228, 71%, 99%);
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    font-weight: 500;
+    color: hsl(224, 21%, 14%);
+    /* height: 100vh;
+    width: 100vw; */
     /* overflow-x: hidden;
     overflow-y: hidden; */
 }
 
-.container {
+body main{
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
     /* border: solid black; */
+    max-width: 796px;
+    padding: 7px;
 }
 
 .notifWrapper {
@@ -34,17 +40,25 @@ body{
     align-items: center;
 }
 
-#msgsCountStyle {
-    margin-left: 10px;
+header h1{
+    font-size: 20px;
+    font-weight: 800;
+    color: hsl(224, 21%, 14%);
+}
+
+.msgsCount {
+    /* margin-left: 10px; */
     background-color: hsl(219, 85%, 26%);
     color: hsl(0, 0%, 100%);
-    padding: 1px 10px;
+    padding: 0.16px 8px;
     border-radius: 5px; /* ilalagay ko to once may count na sa script */
 }
 
 .msgsWrapper {
-    margin: 5px 35px;
+    margin: 10px 25px;
     border-radius: 10px;
+    line-height: 1.5;
+    padding: 10px;
     /* border: solid violet; */
     /* cursor: pointer; */
 }
@@ -54,8 +68,8 @@ body{
 }
 
 img {
-    max-width: 100%;
-    height: 65px;
+    max-width: 50%;
+    height: 50px;
     margin: 10px 10px;
 }
 
@@ -68,11 +82,20 @@ img {
     margin-top: 10px;
 }
 
-h1, .name, .post{
+.name{
     color: hsl(224, 21%, 14%);
     font-weight: 800;
 }
 
+.post{
+   color:hsl(219, 12%, 42%);
+   font-weight: 600;
+}
+
+.chess{
+    color:hsl(219, 85%, 26%);
+   font-weight: 600;
+}
 .action{
     color: hsl(219, 12%, 42%);
 }
@@ -85,13 +108,13 @@ h1, .name, .post{
 .privateMsg{
     border: solid 1px hsl(207, 18%, 90%);
     border-radius: 5px;
-    margin: 10px 0px;
-    padding: 11px;
+    margin-top: 8px;
+    padding: 16px;
     color: hsl(219, 12%, 42%);
-    width: 100%;
+    min-width: 600px;
 }
 
-.fa-solid, .fas {
+.dotIcon {
     font-weight: 900;
     font-size: 9px;
     margin: 0px 7px;
@@ -101,12 +124,21 @@ h1, .name, .post{
 
 .sec-img {
     margin: 10px 0px;
-    padding-left: 300px;
+    padding-left: 195px;
   }
+
+.unread{
+ background-color: hsl(210, 60%, 98%);
+}
 
   
 /* Start active while clicked*/
-#mark:active, .name:active, .post:active{
+.mark:active, .name:active, .post:active{
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+
+.mark:hover{
     color: hsl(219, 85%, 26%);
     cursor: pointer;
 }
@@ -114,18 +146,30 @@ h1, .name, .post{
 /* .msgsWrapper:active{
     background-color: hsl(211, 68%, 94%); 
     cursor: pointer;
-}
+}*/
 
-.privateMsg:active{
-    background-color: hsl(211, 68%, 94%);   
+.privateMsg:hover{
+    background-color: hsl(205, 33%, 90%);   
     cursor: pointer;
-} */
+} 
 
 /* .iconClass:active{
      color: hsl(1, 90%, 64%);} /* mali, kase kelangan pa ma-click yung mismong bilog bago mag red/active */
 
 /* End active */
 
+footer{
+    font-size: .7rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+}
+footer a{
+    color: hsl(219, 85%, 26%);
+}
+footer a:hover{
+    text-decoration: none;
+}
 
 /* Start mobile design */
 @media only screen and (max-width: 600px) {
@@ -135,15 +179,16 @@ h1, .name, .post{
 
    .notifWrapper {
         font-size: 14px;
-        margin: 25px 3px;
+        margin: 25px 0px;
     }
 
-    #msgsCount {
+    .msgsCount {
         margin-left: -3px;
     }
 
     .msgsWrapper {
-        margin: 15px 5px;
+        margin: 5px 5px;
+        line-height: 1.5;
     }
 
     img {
@@ -158,7 +203,7 @@ h1, .name, .post{
     }
 
     .privateMsg{
-        width: 95%;
+        min-width: 225px;
     }
 
     .sec-img {
